@@ -8,9 +8,11 @@
     // Çıktı Ayarları
     "outDir": "./dist",
     "rootDir": "./src",
+    
+    // ⭐ KRİTİK: moduleResolution değişti
     "moduleResolution": "node",
     
-    // Derleme Davranışı
+    // Diğer ayarlar
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -22,11 +24,8 @@
     "sourceMap": true,
     "removeComments": false,
     
-    // Ek Ayarlar
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    // Deprecation uyarısını sustur (isteğe bağlı)
+    "ignoreDeprecations": "5.0"
   },
   "include": [
     "src/**/*"
