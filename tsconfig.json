@@ -9,9 +9,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     
-    // ⭐ KRİTİK: moduleResolution değişti
-    "moduleResolution": "node",
-    
+ 
     // Diğer ayarlar
     "strict": true,
     "esModuleInterop": true,
