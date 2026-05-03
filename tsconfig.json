@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    // Hedef ve Modül
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    
+    // Çıktı Ayarları
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    
+    // Derleme Davranışı
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    
+    // Hata Ayıklama
+    "sourceMap": true,
+    "removeComments": false,
+    
+    // Ek Ayarlar
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts"
+  ]
+}
