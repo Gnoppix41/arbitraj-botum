@@ -4,11 +4,11 @@
   "description": "Cryptocurrency arbitrage bot running on Render",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
-    "clean": "rm -rf dist",
-    "prebuild": "npm run clean"
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "dev": "ts-node src/index.ts",
+  "clean": "if exist dist rmdir /s /q dist",
+  "prebuild": "npm run clean"
   },
   "engines": {
     "node": ">=18.0.0",
@@ -21,12 +21,12 @@
     "dotenv": "^16.3.1"
   },
   "devDependencies": {
-    "@types/node": "^20.10.4",
-    "@types/express": "^4.17.21",
-    "@types/ws": "^8.5.10",
-    "typescript": "^5.3.3",
-    "ts-node": "^10.9.2"
-  },
+  "@types/express": "^4.17.21",
+  "@types/node": "^20.10.4",
+  "@types/ws": "^8.5.10",
+  "typescript": "~5.0.4",
+  "ts-node": "^10.9.2"
+},
   "keywords": ["arbitrage", "crypto", "binance", "typescript"],
   "author": "Your Name",
   "license": "MIT"
